@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hearts</title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name = "viewport" content = "user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="description" content="Hearts card game with HTML5.">
+        <meta name="keywords" content="Hearts HTML5 JavaScript">
+        <meta name="author" content="Yao Yujian">
+        <meta charset="UTF-8">
+
+    <meta name="description" content="An Ubuntu HTML5 application">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <!--
+         Application stylesheets
+         Include your own stylesheets below to style your application.
+      -->
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+
+    <!--
+        Ubuntu UI javascript imports - Ambiance theme
+        Ubuntu provides building blocks that you can use in your application. For more information, you can check out the documentation at http://design.ubuntu.com/apps.
+     -->
+    <!-- Ubuntu UI Style imports - Ambiance theme -->
+    <link href="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/css/appTemplate.css" rel="stylesheet" type="text/css" />
+
+    <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/fast-buttons.js"></script>
+    <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/core.js"></script>
+    <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/buttons.js"></script>
+    <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/dialogs.js"></script>
+    <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/page.js"></script>
+    <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/pagestacks.js"></script>
+    <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/tab.js"></script>
+    <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/tabs.js"></script>
+
+        <link rel='stylesheet' href='style.css' type='text/css' />
+
+
+</head>
+
+<body ontouchstart="">
+<div id = 'main-button-group'>
+        <button class = 'main-button newgame-but'>New Game</button>
+        <button class = 'main-button' id = 'settings-but'>Settings</button>
+</div>
+<div id = 'game-region'></div>
+<div id = 'control-region' hidden>
+        <div id = 'settings-dialog' hidden>
+                <h3>Settings</h3>
+                <table>
+                        <tbody>
+                                <tr>
+                                        <th>Player</th>
+                                        <th>Name</th>
+                                        <th>Level</th>
+                                </tr>
+                                <tr>
+                                        <td>Player 1(you):</td>
+                                        <td class = 'player-set-name one' contentEditable></td>
+                                </tr>
+                                <tr>
+                                        <td>Player 2(East):</td>
+                                        <td class = 'player-set-name two' contentEditable></td>
+                                        <td class = 'player-diff two'>
+                                                <input type="number" min="1" max="4">
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td>Player 3(North):</td>
+                                        <td class = 'player-set-name three' contentEditable></td>
+                                        <td class = 'player-diff three'>
+                                                <input type="number" min="1" max="4">
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td>Player 4(West):</td>
+                                        <td class = 'player-set-name four' contentEditable></td>
+                                        <td class = 'player-diff four'>
+                                                <input type="number" min="1" max="4">
+                                        </td>
+                                </tr>
+                        </tbody>
+                </table>
+        </div>
+        <button class="back-but">Back</button>
+        <button class="newgame-but">Apply</button>
+</div>
+<a href="https://github.com/yyjhao/html5-hearts"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+<script data-main='js/main' src='js/lib/require.js'></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-45751904-1', 'yjyao.com');
+ga('send', 'pageview');
+
+</script>
+    <script src="js/application.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>
+
